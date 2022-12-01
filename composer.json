@@ -1,0 +1,30 @@
+{
+  "name": "niknsk/comments-service",
+  "version": "1.0.0",
+  "license": "MIT",
+  "require": {
+    "php": "^7.4",
+    "ext-json": "*",
+    "psr/http-client": "^1.0",
+    "guzzlehttp/psr7": "^2.2"
+  },
+  "require-dev": {
+    "ext-dom": "*",
+    "phpunit/phpunit": "^9.5",
+    "php-http/mock-client": "^1.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "CommentsService\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CommentsService\\": "src/",
+      "CommentsService\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit tests"
+  }
+}
